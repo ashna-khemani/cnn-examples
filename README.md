@@ -1,7 +1,7 @@
 # CNN Examples
 Examples of Convolutional Neural Networks in action! 
 
-### Running this notebook locally
+### Running these notebooks locally
 If you're running this locally, I recommend using a virtual environment, especially if you don't have libraries like tensorflow installed globally.   
 Here's how to do that (for Mac users):
 1. Make sure you have virtualenv installed   
