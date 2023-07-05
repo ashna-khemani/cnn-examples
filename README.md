@@ -13,9 +13,10 @@ Here's how to do that (for Mac users):
     2. Run `virtualenv .env`
     3. Run `source .env/bin/activate`
 
-Now we're in the virtual env! You will probably need to install `tensorflow` and `matplotlib`. Run the following:
+Now we're in the virtual env! Run the following:
 * `pip install tensorflow`
 * `pip install matplotlib`
+* `pip install ipykernel`
 
 I personally ran into some permission errors when installing tensorflow. If you also have that issue, try running `pip install --no-cache-dir tensorflow`. This essentially ignores the cache that is restricted. Not really much of an effect, except the installation taking slightly longer. You can also try `sudo pip install tensorflow` but it's not the safest habit in the world.
 
