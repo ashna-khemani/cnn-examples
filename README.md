@@ -2,8 +2,8 @@
 Examples of Convolutional Neural Networks in action! 
 
 ## Running these notebooks
-The easiest way to run these notebooks is through <a href="https://colab.research.google.com">Google Colab</a>, but you can also run them locally on your computer.
-If you choose to run locally, I recommend using a virtual environment, especially if you don't have libraries like tensorflow installed globally.   
+The best way to run these notebooks is through <a href="https://colab.research.google.com">Google Colab</a>. For faster performance (especially with training the models), go to the top toolbar. Click `Runtime` -> `Change runtime type` -> set `Hardware accelerator` to `GPU`.   
+You can also run the notebooks locally on your computer. I recommend using a virtual environment, especially if you don't have libraries like TensorFlow installed globally.   
 Here's how to do that (for Mac users):
 1. Make sure you have virtualenv installed   
     1. Check this by running `pip show virtualenv`
@@ -13,17 +13,17 @@ Here's how to do that (for Mac users):
     2. Run `virtualenv .env`
     3. Run `source .env/bin/activate`
 
-Now we're in the virtual env! Run the following:
+Now we're in the virtual env! Run the following to install the necessary libraries:
 * `pip install tensorflow`
 * `pip install matplotlib`
 * `pip install ipykernel`
 
-I personally ran into some permission errors when installing tensorflow. If you also have that issue, try running `pip install --no-cache-dir tensorflow`. This essentially ignores the cache that is restricted. Not really much of an effect, except the installation taking slightly longer. You can also try `sudo pip install tensorflow` but it's not the safest habit in the world.
+I personally ran into some permission errors when installing TensorFlow. If you also have that issue, try running `pip install --no-cache-dir tensorflow`. This essentially ignores the cache that is restricted. Not really much of a difference, except the installation taking slightly longer. You can also try `sudo pip install tensorflow` but it's not the safest habit in the world to use `sudo` when installing things.
 
 *Note: depending on your Python installation, you might be better off using `pip3` instead of `pip` for these commands*   
 
 
-## Basic Theory
+## Basic CNN Theory
 A **neural network** is a series of connected nodes arranged in layers. We have an **input layer**, a number of **hidden layers**, and an **output layer**. 
 <br>
 
